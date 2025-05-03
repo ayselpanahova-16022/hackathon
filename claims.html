@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PASHA Insurance - Claims</title>
+  <link rel="stylesheet" href="dashboard.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="sidebar">
+    <div class="logo-container">
+      <img src="Logo.png" alt="PASHA Insurance Logo">
+    </div>
+    <nav>
+      <a href="dashboard.html">🏠 Dashboard</a>
+      <a href="policies.html">📄 Policies</a>
+      <a href="claims.html" class="active">🧾 Claims</a>
+      <a href="payments.html">💳 Payments</a>
+      <a href="settings.html">⚙️ Settings</a>
+    </nav>
+  </div>
+  
+  <div class="main">
+    <div class="topbar">
+      <h2>Claims</h2>
+      <input type="text" placeholder="Search claims...">
+    </div>
+    
+    <div class="cards">
+      <div class="card">
+        <h3>Total Claims</h3>
+        <p>23</p>
+      </div>
+      <div class="card">
+        <h3>Pending Claims</h3>
+        <p>3</p>
+      </div>
+      <div class="card">
+        <h3>Approved Claims</h3>
+        <p>18</p>
+      </div>
+      <div class="card">
+        <h3>Denied Claims</h3>
+        <p>2</p>
+      </div>
+    </div>
+    
+    <div class="table-section">
+      <h3>Recent Claims</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Date Filed</th>
+            <th>Claim ID</th>
+            <th>Policy ID</th>
+            <th>Type</th>
+            <th>Amount</th>
+            <th>Status</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2025-04-28</td>
+            <td>#C1234</td>
+            <td>#P2001</td>
+            <td>Auto</td>
+            <td>$2,300</td>
+            <td class="status approved">Approved</td>
+            <td><a href="#">View Details</a></td>
+          </tr>
+          <tr>
+            <td>2025-04-25</td>
+            <td>#C1233</td>
+            <td>#P2002</td>
+            <td>Health</td>
+            <td>$750</td>
+            <td class="status pending">Pending</td>
+            <td><a href="#">View Details</a></td>
+          </tr>
+          <tr>
+            <td>2025-04-20</td>
+            <td>#C1231</td>
+            <td>#P2004</td>
+            <td>Travel</td>
+            <td>$1,200</td>
+            <td class="status denied">Denied</td>
+            <td><a href="#">View Details</a></td>
+          </tr>
+          <tr>
+            <td>2025-04-15</td>
+            <td>#C1230</td>
+            <td>#P2003</td>
+            <td>Property</td>
+            <td>$5,000</td>
+            <td class="status approved">Approved</td>
+            <td><a href="#">View Details</a></td>
+          </tr>
+          <tr>
+            <td>2025-04-12</td>
+            <td>#C1229</td>
+            <td>#P2001</td>
+            <td>Auto</td>
+            <td>$3,400</td>
+            <td class="status approved">Approved</td>
+            <td><a href="#">View Details</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
+    <div class="renewals">
+      <h3>File New Claim</h3>
+      <button class="btn-primary">+ Create New Claim</button>
+    </div>
+  </div>
+</body>
+</html>

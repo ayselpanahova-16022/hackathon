@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PASHA Insurance - Payments</title>
+  <link rel="stylesheet" href="dashboard.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="sidebar">
+    <div class="logo-container">
+      <img src="Logo.png" alt="PASHA Insurance Logo">
+    </div>
+    <nav>
+      <a href="dashboard.html">🏠 Dashboard</a>
+      <a href="policies.html">📄 Policies</a>
+      <a href="claims.html">🧾 Claims</a>
+      <a href="payments.html" class="active">💳 Payments</a>
+      <a href="settings.html">⚙️ Settings</a>
+    </nav>
+  </div>
+  
+  <div class="main">
+    <div class="topbar">
+      <h2>Payments</h2>
+      <input type="text" placeholder="Search payments...">
+    </div>
+    
+    <div class="cards">
+      <div class="card">
+        <h3>Total Paid</h3>
+        <p>200 AZN</p>
+      </div>
+
+      <div class="card">
+        <h3>Overdue</h3>
+        <p>$0</p>
+      </div>
+    </div>
+    
+    <div class="table-section">
+      <h3>Payment History</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Payment ID</th>
+            <th>Policy ID</th>
+            <th>Amount</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2025-04-15</td>
+            <td>#PAY8765</td>
+            <td>#P2001</td>
+            <td>50 AZN</td>
+            <td class="status approved">Completed</td>
+          </tr>
+          <tr>
+            <td>2025-04-01</td>
+            <td>#PAY8764</td>
+            <td>#P2002</td>
+            <td>34 AZN</td>
+            <td class="status approved">Completed</td>
+          </tr>
+          <tr>
+            <td>2025-03-20</td>
+            <td>#PAY8763</td>
+            <td>#P2003</td>
+            <td>47 AZN</td>
+            <td class="status approved">Completed</td>
+          </tr>
+          <tr>
+            <td>2025-03-15</td>
+            <td>#PAY8762</td>
+            <td>#P2004</td>
+            <td>11 AZN</td>
+            <td class="status approved">Completed</td>
+          </tr>
+          <tr>
+            <td>2025-03-10</td>
+            <td>#PAY8761</td>
+            <td>#P2005</td>
+            <td>78 AZN</td>
+            <td class="status approved">Completed</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
